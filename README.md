@@ -1,16 +1,14 @@
-# aurora_photo_test
+# Приложение для сканирования тестов на Aurora/Flutter
 
-A new Flutter project.
+## Описание функционала
 
-## Getting Started
+- Авторизация преподавателя (логин, пароль, номер теста)
+- Возможность сделать фотографию теста
+- Возможность изменить тему, язык приложения
+- Добавление правильных ответов на тест для преподавателя (аутентифицированного пользователя)
 
-This project is a starting point for a Flutter application.
+## Структура проекта
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- UI (написан на Dart с использованием Flutter)
+- Backend (написан на Python c использованием FastAPI), разворачивается на виртуальной машине
+- Распознавание с помощью OpenCV
