@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: Copyright 2024 Open Mobile Platform LLC <community@omp.ru>
+# SPDX-License-Identifier: BSD-3-Clause
+name: camera_aurora_example
+description: "The Aurora OS example of camera_aurora."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  internal_aurora:
+    git:
+      url: https://gitlab.com/omprussia/flutter/flutter-plugins.git
+      ref: internal_aurora-0.5.0
+      path: packages/internal_aurora
+  camera: ^0.10.5+5
+  camera_aurora:
+    path: ../
+  path_provider: ^2.0.15
+  path_provider_aurora:
+    git:
+      url: https://gitlab.com/omprussia/flutter/flutter-plugins.git
+      ref: path_provider_aurora-0.5.0
+      path: packages/path_provider/path_provider_aurora
+
+flutter:
+  uses-material-design: true
